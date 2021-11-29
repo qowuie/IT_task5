@@ -111,7 +111,9 @@ def start(message):
 
 @bot.message_handler(commands=['help'])
 def start_message(message):
-    bot.send_message(message.chat.id, 'Я умею:\n')
+    bot.send_message(message.chat.id, 'Я умею:\nМотивировать, если нажать кнопку "мотивация"\nЕсли хочите '
+                                      'потренироваться, нажмите кнопку "тренировка"\n'
+                                      'Если какое-нибудь упражнение непонятно, нажмите "упражнения"')
 
 
 @bot.message_handler(content_types=['text'])
